@@ -1,6 +1,9 @@
+import './HelloWorld.css'
+
 export default function HelloWorld() {
     const propert={
-        paragraph : "This is paragraph Hello World"
+        paragraph : "This is the first paragraph Hello World",
+        paragraph2 : "This is the second paragraph of Hello World"
     }
   return (
     <>
@@ -13,10 +16,7 @@ export default function HelloWorld() {
 function HeaderHelloWorld(props) {
   return (
     <>
-      <h1 style={{
-        color : "white",
-        backgroundColor : "black"
-      }}>{props.header.toUpperCase()} and {props.header2.toUpperCase()}</h1>
+      <h1 className='title'>{props.header.toUpperCase()} and {props.header2.toUpperCase()}</h1>
     </>
   );
 }
@@ -28,7 +28,7 @@ function ParagraphHelloWorld({paragraph = "This is the default value, I forgot t
   }
   return (
     <>
-      <p style={style}>{paragraph.toLowerCase()}</p>
+      <p className='content'>{paragraph.toLowerCase()}</p>
     </>
   );
 }
