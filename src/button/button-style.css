@@ -1,0 +1,14 @@
+div#root{
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: aqua;
+    padding: 3em 5em;
+    border-radius: 3em;
+    border: none;
+}

@@ -4,7 +4,7 @@ export default function Todo({text, isCompleted, isDeleted=false}){
     }else{
         return(
             <li>
-                {text} {isCompleted && '🥇'}
+                {text} {isCompleted ? '🥇' : '❌'}
             </li>
         )
     }
